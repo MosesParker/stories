@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Waves Of Heaven - By Moses">
+    <meta name="keywords" content="waves of heaven, moses">
+    <meta name="author" content="Moses">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Open Graph meta tags for social media sharing -->
+    <meta property="og:title" content="Waves Of Heaven - By Moses">
+    <meta property="og:description" content="waves of heaven | a key to find a purpose of life">
+    <meta property="og:type" content="Short Animation Story">
+
+    <title>Waves Of Heaven</title>
+
+    <!-- Favicon -->
+    <!-- <link rel="icon" href="../images/velvom_icon_color.jpg" type="image/x-icon"> -->
+
+    <style>
+        /* Ensure html and body cover the full height of the page */
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+	    background: url('bg.png');
+        }
+
+        .outer-container {
+            width: 50%;
+        }
+
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .inner-frame {
+            position: relative;
+            width: 100%;
+            height: 0;
+            padding-top: 100%;
+            box-shadow: 0 2px 8px 0 rgba(63, 69, 81, 0.16);
+            margin-top: 1.6em;
+            margin-bottom: 0.9em;
+            overflow: hidden;
+            border-radius: 8px;
+            will-change: transform;
+        }
+
+	#pre-loader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(255, 255, 255, 0.8);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+        }
+
+        /* Spinner styles */
+        .spinner {
+            border: 8px solid #f3f3f3;
+            border-top: 8px solid #3498db;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            animation: spin 2s linear infinite;
+        }
+
+        /* Keyframes for spinner animation */
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+	@media (max-width: 767px)
+	{
+		.outer-container {
+        	    width: 90%;
+        	}
+	}
+    </style>
+</head>
+
+<body>
+
+   <!-- Pre-loader element -->
+    <div id="pre-loader">
+        <div style="text-align: center;"><img src="https://img.pikbest.com/png-images/20190918/cartoon-snail-loading-loading-gif-animation_2734139.png!sw800" style="width:50%"></div>
+    </div>
+
+    <div class="outer-container">
+        <div class="inner-frame">
+             <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+    			src="https://www.canva.com/design/DAGQ7i-p220/9VLuTwexmJABv3wFzZdWkQ/view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
+  	     </iframe>
+        </div>
+    </div>
+
+	<script>
+        // JavaScript to hide the pre-loader once the page is loaded
+        window.addEventListener('load', function () {
+            // Hide the pre-loader once the page is fully loaded
+            document.getElementById('pre-loader').style.display = 'none';
+        });
+    </script>
+</body>
+
+</html>
